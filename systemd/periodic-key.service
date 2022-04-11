@@ -1,0 +1,15 @@
+[Unit]
+Description=Periodically Keystroke to Window
+
+[Service]
+Type=simple
+User=pesi
+Environment=DISPLAY=:0
+Environment=XDG_SESSION_TYPE=x11
+Environment=KEYSTROKE=CTRL+R
+Environment=TARGET_WINDOW=chrome
+Environment=PERIOD=5
+ExecStart=/opt/periodic-key/bin/periodic-key.sh
+
+[Install]
+WantedBy=multi-user.target
