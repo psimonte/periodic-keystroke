@@ -8,7 +8,7 @@ Environment=DISPLAY=:0
 Environment=XDG_SESSION_TYPE=x11
 Environment=KEYSTROKE=CTRL+R
 Environment=TARGET_WINDOW=chrome
-Environment=PERIOD=5
+Environment=PERIOD=120
 ExecStart=/opt/periodic-keystroke/bin/periodic-key.sh
 
 [Install]
