@@ -9,7 +9,7 @@ Environment=XDG_SESSION_TYPE=x11
 Environment=KEYSTROKE=CTRL+R
 Environment=TARGET_WINDOW=chrome
 Environment=PERIOD=5
-ExecStart=/opt/periodic-key/bin/periodic-key.sh
+ExecStart=/opt/periodic-keystroke/bin/periodic-key.sh
 
 [Install]
 WantedBy=multi-user.target
