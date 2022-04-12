@@ -18,10 +18,12 @@ if [ -z "${PERIOD}" ]; then
     PERIOD=5
 fi
 
-WINDOWS="$(xdotool search --sync --all --onlyvisible --name ${TARGET_WINDOW})"
 
 while true
 do
+	# Scan open Windows
+	WINDOWS="$(xdotool search --sync --all --onlyvisible --name ${TARGET_WINDOW})"
+	
 	# Send keystroke
 	for window in $WINDOWS; do
 		xdotool windowfocus --sync "$window"
